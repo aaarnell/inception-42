@@ -3,6 +3,9 @@ FROM debian:buster
 
 # переменные среды импортируемые в контейнер
 ENV MYSQL_ROOT_PASSWORD=inception42
+ENV MYSQL_USER=inception
+ENV MYSQL_PASSWORD=inception42
+ENV MYSQL_DATABASE=wordpress
 
 # каталог хоста для подмонтирования в контейнер
 #VOLUME /var/lib/mysql
